@@ -1,5 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import styled from 'styled-components'
+
+const Saudation = styled.div`
+  font-size: 2rem;
+  color: cadetblue;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem 0;
+`
 
 const Home: NextPage = () => {
   return (
@@ -7,7 +16,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Hello World</title>
       </Head>
-      <div>Hello World!</div>
+      <Saudation>Hello World!</Saudation>
     </>
   )
 }
